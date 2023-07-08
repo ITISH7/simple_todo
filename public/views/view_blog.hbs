@@ -1,0 +1,15 @@
+{{>header}}
+<div class="container mt-5">
+    {{#each diary_data}}
+    <div class="card mt-2" style="width: 60rem; background:#c3e9eb;">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{this.name}}</h6>
+            <p class="card-text">{{this.discription}}</p>
+            <a href="/update/data/{{this.id}}" class="card-link btn btn-sm btn-primary">Update</a>
+            <a href="/delete/data/{{this._id}}" class="card-link btn btn-sm btn-danger">delete</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{>footer}}

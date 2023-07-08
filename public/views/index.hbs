@@ -1,0 +1,13 @@
+{{>header}}
+<div class="container-md mt-3">
+    <form action="/send/details" method="post">
+    <label for="Title" class="form-label fs-3">title</label>
+    <input type="text" name="Title" class="form-control" placeholder="enter your title here">
+    <label for="discription" class="form-label fs-3 mt-1">Discription</label>
+    <textarea name="Discription" id="" cols="30" rows="6" class="form-control" placeholder="discribe your title"></textarea>
+    <label for="name" class="form-label fs-3"> Name <input type="text" name="Name" class="form-control" placeholder=" enter your name"></label>
+    <input type="submit" value="Add data" class="btn btn-md btn-success">
+    </form>
+</div>
+
+{{>footer}}
